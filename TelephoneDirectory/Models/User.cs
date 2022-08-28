@@ -6,13 +6,13 @@
 
         public int IdDepartment {get; set;}
 
-        public string Name { get; set; }
+        public string Name { get; set; } = null!; 
 
-        public string SurName { get; set; }
+        public string SurName { get; set; } = null!;
 
-        public string Position { get; set; }
+        public string Position { get; set; } = null!;
 
-        public string Phone { get; set; }
+        public string Phone { get; set; } = null!;
 
     }
 }

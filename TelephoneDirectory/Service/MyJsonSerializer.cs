@@ -4,11 +4,10 @@ using TelephoneDirectory.Models;
 
 namespace TelephoneDirectory.Service
 {
-    public class MyJsonSerializer
+    public static class MyJsonSerializer
     {
-        private JsonSerializerSettings settings;
-        private string json;
-        public MyJsonSerializer()
+        private static JsonSerializerSettings settings;
+        static MyJsonSerializer()
         {
             settings = new JsonSerializerSettings
             {
@@ -19,12 +18,10 @@ namespace TelephoneDirectory.Service
         /// <summary>
         /// Converts object to JSON string
         /// </summary>
-        /// <param name="o">object to convert</param>
+        /// <param name="target">object to convert</param>
         /// <returns>JSON string</returns>
-        public string MySerialize(object o){
-            json = JsonConvert.SerializeObject(o, settings);
-            return json;
+        public static string MySerialize(object target){
+            return JsonConvert.SerializeObject(target, settings);
         }
-
     }
 }

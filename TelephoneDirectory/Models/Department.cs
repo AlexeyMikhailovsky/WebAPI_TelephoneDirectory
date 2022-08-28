@@ -6,8 +6,7 @@ namespace TelephoneDirectory.Models
     {
         public Department()
         {
-            Children = new List<Department>();
-            Employees = new List<User>();
+            Children = new List<int>();
         }
 
         public int Id { get; set; }
@@ -16,8 +15,7 @@ namespace TelephoneDirectory.Models
 
         public string Title { get; set; }
 
-        public List<Department> Children { get; set; }
+        public List<int>? Children { get; set; }
 
-        public List<User> Employees { get; set; }
     }
 }
