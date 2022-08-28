@@ -8,7 +8,7 @@
 5. Data is stored in the database. It is possible to use SQLite, PostgreSQL, MySql.
 6. Access of the "Server" to the database data occurs by executing direct SQL commands without using any ORM.
 
-Test task. Used .Net Core, MySQL. Information about departments and employees can be viewed, added, deleted, updated and changed.
+Test task. Used .Net Core, MySQL. Information about departments and employees can be viewed, added, deleted and updated.
 ### Implemented functionality
 - Departments:
     - can be updated
